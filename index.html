@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>crud system</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+  <div class="container py-5">
+
+  
+  <div class="form-floating mb-3">
+    <input  type="text"  class="form-control" id="productName" placeholder="product Name">
+    <label for="productName">product Name</label>
+  </div>
+
+  <div class="form-floating mb-3">
+    <input type="number" class="form-control" id="productPrice" placeholder="product Price">
+    <label for="productPrice">product Price</label>
+  </div>
+
+  <div class="form-floating mb-3">
+    <input  list="cateogry" type="text" class="form-control" id="productCategory" placeholder="product Category">
+    <label for="productCategory" >product Category</label>
+
+    <datalist id="cateogry">
+        <option value="Tv">
+        <option value="mobile">
+        <option value="screens">
+        <option value="electorincs">
+    </datalist>
+  </div>
+
+  <div class="form-floating mb-3">
+    <input  type="file" class="form-control" id="productImage" placeholder="product Image" >
+    <label for="productImage">product Image</label>
+  </div>
+
+  <div class="form-floating mb-3">
+    <textarea style="height: 100px;"   class="form-control" id="productDesc" placeholder="product Description"> </textarea>
+    <label for="productDesc">product Description</label>
+  </div>
+
+  <button onclick="addproducts()" id="addBtn" class="btn btn-outline-info ">Add product</button>
+  <button onclick="updateProduct()" id="updateBtn" class="d-none btn btn-outline-warning ">update product</button>
+
+  </div>
+
+  <div class="container">
+    <input  id="searchInput" onkeyup="search()" type="search" class="form-control w-75 m-auto mb-3" placeholder="search...." >
+    <div class="row" id="rowData">
+      
+    </div>
+  </div>
+
+  <!-- <table class="table w-75 m-auto">
+    <thead>
+      <tr>
+        <th>index</th>
+        <th>name</th>
+        <th>price</th>
+        <th>cateogry</th>
+        <th>description</th>
+        <th>image</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>0</td>
+        <td>oppo</td>
+        <td>5000</td>
+        <td>mobile</td>
+        <td>Lorem ipsum dolor sit amet.</td>
+        <td><img src="./imgs/iphone.jpg" class="w-25" alt=""></td>
+      </tr>
+      
+    </tbody>
+  </table> -->
+
+  
+
+   
+
+ 
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
+
+ 
+</body>
+</html>
